@@ -1,11 +1,9 @@
 ---
-- name: "install {{ component }}"
+- name: "install {{component}}"
   hosts: localhost
   connection: local
-  gather_facts: false
   vars_files:
-    - "variables-{{ env }}.yaml"
+  - "variables-{{env}}.yaml"
   become: yes
   roles:
-    - role: "{{ component }}"
-      when: component is defined and component | length > 0
+  - "{{component}}"

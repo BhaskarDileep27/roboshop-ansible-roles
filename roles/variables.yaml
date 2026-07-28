@@ -1,10 +1,10 @@
-MONGODB_HOST: localhost
-REDIS_HOST: localhost
-MYSQL_HOST: localhost
-RABBITMQ_HOST: localhost
-CATALOGUE_HOST: localhost
-USER_HOST: localhost
-CART_HOST: localhost
-SHIPPING_HOST: localhost
-PAYMENT_HOST: localhost
-DISPATCH_HOST: localhost
+MONGODB_HOST: mongodb.dileep.sbs # submit your host
+REDIS_HOST: redis.dileep.sbs
+MYSQL_HOST: mysql.dileep.sbs
+RABBITMQ_HOST: rabbitmq.dileep.sbs
+CATALOGUE_HOST: catalogue.dileep.sbs
+USER_HOST: user.dileep.sbs
+CART_HOST: cart.dileep.sbs
+SHIPPING_HOST: shipping.dileep.sbs
+PAYMENT_HOST: payment.dileep.sbs
+DISPATCH_HOST: dispatch.dileep.sbs

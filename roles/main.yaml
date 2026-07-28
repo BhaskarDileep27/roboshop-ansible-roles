@@ -1,18 +1,8 @@
 ---
-- name: "Install {{ component }}"
-  hosts: localhost
-  connection: local
-  gather_facts: false
+- name: "install {{component}}"
+  hosts: "{{component}}"
   vars_files:
-    - variables.yaml
+  - variables.yaml
   become: yes
-  vars:
-    ansible_host: 127.0.0.1
-  tasks:
-    - name: Show component
-      debug:
-        msg: "Running role for {{ component }}"
-    - name: Include role
-      include_role:
-        name: "{{ component }}"
-      when: component is defined and component | length > 0
+  roles:
+  - "{{component}}"
