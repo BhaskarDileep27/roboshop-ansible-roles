@@ -1,4 +1,4 @@
-MONGODB_HOST: mongodb.dileep.sbs  # submit your host
+MONGODB_HOST: mongodb-dev.dileep.sbs  # submit your host
 REDIS_HOST: redis-dev.dileep.sbs 
 MYSQL_HOST: mysql-dev.dileep.sbs 
 RABBITMQ_HOST: rabbitmq-dev.dileep.sbs 
