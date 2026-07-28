@@ -8,3 +8,4 @@
   become: yes
   roles:
     - role: "{{ component }}"
+      when: component is defined and component | length > 0
