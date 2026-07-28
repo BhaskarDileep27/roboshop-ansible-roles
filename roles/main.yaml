@@ -6,6 +6,8 @@
   vars_files:
     - variables.yaml
   become: yes
+  vars:
+    ansible_host: 127.0.0.1
   roles:
     - role: "{{ component }}"
       when: component is defined and component | length > 0
