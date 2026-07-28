@@ -1,7 +1,10 @@
-- name: "install {{component}}"
-  hosts: "{{component}}"
+---
+- name: "Install {{ component }}"
+  hosts: localhost
+  connection: local
+  gather_facts: false
   vars_files:
-  - variables.yaml
+    - variables.yaml
   become: yes
   roles:
-  - "{{component}}"
+    - role: "{{ component }}"
