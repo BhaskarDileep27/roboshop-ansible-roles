@@ -1,0 +1,10 @@
+MONGODB_HOST: mongodb.dileep.sbs # submit your host
+REDIS_HOST: redis.dileep.sbs
+MYSQL_HOST: mysql.dileep.sbs
+RABBITMQ_HOST: rabbitmq.dileep.sbs
+CATALOGUE_HOST: catalogue.dileep.sbs
+USER_HOST: user.dileep.sbs
+CART_HOST: cart.dileep.sbs
+SHIPPING_HOST: shipping.dileep.sbs
+PAYMENT_HOST: payment.dileep.sbs
+DISPATCH_HOST: dispatch.dileep.sbs
