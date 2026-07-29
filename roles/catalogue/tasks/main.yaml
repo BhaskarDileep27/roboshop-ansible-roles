@@ -8,10 +8,10 @@
     name: common
     tasks_from: nodejs
 
-- name: mongosh setup
+- name: mongodb setup
   ansible.builtin.import_role:
     name: common
-    tasks_from: mongosh-setup
+    tasks_from: mongodb-setup
 
 - name: system start
   ansible.builtin.import_role:
