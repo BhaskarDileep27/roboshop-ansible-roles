@@ -11,8 +11,6 @@
   ansible.builtin.file:
     path: /app
     state: absent
-    #force: yes
-    #recurse: yes
 
 - name: create app directory
   tags:
@@ -39,9 +37,8 @@
 - name: Install dependencies
   tags:
   - deployment
-  ansible.builtin.command: npm install
-  args:
-    chdir: /app
+  community.general.npm:
+    path: /app
 
 - name: "restart {{component}}"
   tags:
